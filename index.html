@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+		<!-- Title -->
+		<title>DCSL</title>
+
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+		<!-- Google fonts (https://fonts.google.com/) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
+		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+		<link rel="stylesheet" href="assets/vendor/fancybox/css/fancybox.css"> <!-- Fancybox (lightbox) JS (https://fancyapps.com/) -->
+		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css"> <!-- Swiper CSS (https://swiperjs.com/) -->
+
+		<!-- Master CSS -->
+		<link rel="stylesheet" href="assets/css/helper.css">
+		<link rel="stylesheet" href="assets/css/theme.css">
+
+		<!-- Light style CSS -->
+		<link rel="stylesheet" href="assets/css/theme-light.css">
+		<style type="text/css">
+			.text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  font-size: 140px;
+  visibility: hidden;
+  /* Start hidden */
+}
+
+.text-line.animate {
+  visibility: visible;
+  /* Visible when animated */
+  animation: dash 2.5s linear forwards, filling 2.5s ease-in forwards;
+
+}
+
+.text-line text {
+  font-family: 'Anton', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  0%,
+  90% {
+    fill: #fff;
+    fill-opacity: 0;
+  }
+
+  100% {
+    fill: #fff;
+    fill-opacity: 1;
+    
+  }
+}
+		</style>
+
+	</head>
+
+	
+	<!-- ===========
+	///// Body /////
+	================
+	* Use class "tt-transition" to enable page transitions.
+	* Use class "tt-magic-cursor" to enable magic cursor.
+	* Use class "tt-noise" to enable the background noise effect on the whole page. 
+	* Use class "tt-smooth-scroll" to enable page smooth scroll. 
+	* Use class "tt-lightmode-default" to enable light style by default (you must clear your browser's cookies and cache first!).
+	* Note: there may be classes that are specific to this page only!
+	-->
+	<body id="body" class="tt-transition tt-noise tt-magic-cursor tt-smooth-scroll">
+
+
+		<!-- *************************************
+		*********** Begin body inner ************* 
+		************************************** -->
+		<main id="body-inner">
+
+
+			<!-- Begin page transition (do not remove!!!) 
+			=========================== -->
+			<div id="tt-page-transition">
+				<div class="tt-ptr-overlay-top tt-noise"></div>
+				<div class="tt-ptr-overlay-bottom tt-noise"></div>
+				<div class="tt-ptr-preloader">
+					<div class="tt-ptr-prel-content">
+						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".tt-ptr-prel-image"). -->
+						<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-ptr-prel-image" alt="Logo">
+					</div> <!-- /.tt-ptr-prel-content -->
+				</div> <!-- /.tt-ptr-preloader -->
+			</div>
+			<!-- End page transition -->
+
+			<!-- Begin magic cursor 
+			======================== -->
+			<div id="magic-cursor">
+				<div id="ball"></div>
+			</div>
+			<!-- End magic cursor --> 
+
+			<!-- ===================
+			///// Begin header /////
+			========================
+			* Use class "tt-header-scroll" to hide header on scroll down and show on scroll up.
+			* Use class "tt-header-fixed" to set header to fixed position (no effect with class "tt-header-scroll").
+			* Use class "tt-header-filled" to add background color to header on scroll (effect only with class "tt-header-scroll" and "tt-header-fixed").
+			* Use class "tt-header-alter" to enable alternative layout (for desktop only!).
+			-->
+			<header id="tt-header" class="tt-header-alter tt-header-scroll tt-header-filled">
+				<div class="tt-header-inner tt-noise"> 
+
+					<div class="tt-header-col tt-header-col-left">
+
+						<!-- Begin logo 
+						================ 
+						Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img").
+						-->
+						<div class="tt-logo"> 
+							<a href="index.html" class="tt-magnetic-item">
+								<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-logo-light" alt="Logo"> <!-- logo light -->
+								<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-logo-dark" alt="Logo"> <!-- logo dark -->
+							</a>
+						</div>
+						<!-- End logo -->
+
+					</div> <!-- /.tt-header-col -->
+
+					<div class="tt-header-col tt-header-col-center">
+
+						<!-- Begin main menu (classic)
+						===============================
+						* Use class "tt-m-menu-center" to align mobile menu to center.
+						-->
+						<nav class="tt-main-menu tt-m-menu-center">
+							<div class="tt-main-menu-holder">
+								<div class="tt-main-menu-inner">
+									<div class="tt-main-menu-content">
+
+										<!-- Begin main menu list -->
+										<ul class="tt-main-menu-list">
+
+											<!-- Begin submenu (submenu master)
+											==================================== -->
+											<li class="active"><a href="about-me.html">Home</a></li>
+
+											<li class="tt-submenu-wrap tt-submenu-master">
+												<div class="tt-submenu-trigger">
+													<a href="#">About Us</a>
+												</div> <!-- /.tt-submenu-trigger -->
+												<div class="tt-submenu">
+													<ul class="tt-submenu-list">
+
+														<li class="active"><a href="/">Story of Arrack</a></li>
+														<li><a href="/">Heritage</a></li>
+														<li><a href="/">Leadership</a></li>
+														<li><a href="/">Management Team</a></li>
+
+													</ul> <!-- /.tt-submenu-list -->
+												</div> <!-- /.tt-submenu -->
+											</li>
+											<!-- End submenu (sub-master) -->
+
+											<!-- Begin submenu (submenu master)
+											==================================== -->
+											<li class="tt-submenu-wrap tt-submenu-master">
+												<div class="tt-submenu-trigger">
+													<a href="#">Brands</a>
+												</div> <!-- /.tt-submenu-trigger -->
+												<div class="tt-submenu">
+													<ul class="tt-submenu-list">
+
+														<li><a href="/pinnacle.html">The Pinnacle</a></li>
+														<li><a href="/">Pure Coconut</a></li>
+														<li><a href="/">Submenu 1</a></li>
+														<li><a href="/">Submenu 2</a></li>
+														<li><a href="/">Submenu 3</a></li>
+														<li><a href="/">Submenu 4</a></li>
+
+													</ul> <!-- /.tt-submenu-list -->
+												</div> <!-- /.tt-submenu -->
+											</li>
+											<!-- End submenu (sub-master) -->
+
+											<li><a href="/">Cocktails</a></li>
+											<li><a href="/">News</a></li>
+
+											<!-- Begin submenu (submenu master)
+											====================================  -->
+											<li class="tt-submenu-wrap tt-submenu-master">
+												<div class="tt-submenu-trigger">
+													<a href="#">Company</a>
+												</div>  
+												<div class="tt-submenu">
+													<ul class="tt-submenu-list">
+
+														<li><a href="/">Investor Relations</a></li>
+														<li><a href="/">Corporate Governance</a></li>
+
+													</ul>
+												</div> 
+											</li>
+											<!--End submenu (sub-master) -->
+											
+											<!-- Begin submenu (submenu master)
+											==================================== 
+											<li class="tt-submenu-wrap tt-submenu-master">
+												<div class="tt-submenu-trigger">
+													<a href="#">Contact</a>
+												</div> /.tt-submenu-trigger 
+												<div class="tt-submenu">
+													<ul class="tt-submenu-list">
+
+														<li><a href="contact.html">Contact Form</a></li>
+														<li><a href="contact-simple.html">Contact Simple</a></li>
+
+													</ul>  /.tt-submenu-list 
+												</div>  /.tt-submenu 
+											</li>
+											End submenu (sub-master) -->
+
+
+										</ul>
+										<!-- End main menu list -->
+
+									</div> <!-- /.tt-main-menu-content -->
+								</div> <!-- /.tt-main-menu-inner -->
+							</div> <!-- /.tt-main-menu-holder -->
+
+						</nav> 
+						<!-- End main menu -->
+
+					</div> <!-- /.tt-header-col -->
+
+					<div class="tt-header-col tt-header-col-right">
+
+						<!-- Begin mobile menu toggle button (for "tt-main-menu") --> 
+						<div id="tt-m-menu-toggle-btn-wrap">
+							<div class="tt-m-menu-toggle-btn-text">
+								<span class="tt-m-menu-text-menu">Menu</span>
+								<span class="tt-m-menu-text-close">Close</span>
+							</div>
+							<div class="tt-m-menu-toggle-btn-holder">
+								<a href="#" class="tt-m-menu-toggle-btn"><span></span></a>
+							</div>
+						</div>
+						<!-- End mobile menu toggle button -->
+
+						<!-- Begin header button (hidden on small screens!) -->
+						<a href="contact.html" class="tt-btn tt-btn-secondary hide-from-xlg tt-magnetic-item">
+							<span data-hover="Contact">Contact</span>
+						</a>
+						<!-- End header button -->
+
+						<!-- Begin style switch button
+						<div class="tt-style-switch">
+							<div class="tt-style-switch-inner tt-magnetic-item">
+								<div class="tt-stsw-light">
+									<i class="fas fa-sun"></i>
+								</div>
+								<div class="tt-stsw-dark">
+									<i class="fas fa-moon"></i>
+								</div>
+							</div>
+						</div>
+						 End style switch button -->
+
+					</div> <!-- /.header-col -->
+				</div> <!-- /.header-inner -->
+			</header>
+			<!-- End header -->
+
+			
+			<!-- *************************************
+			*********** Begin content wrap *********** 
+			************************************** -->
+			<div id="tt-content-wrap">
+
+				
+				<!-- ========================
+				///// Begin page header /////
+				============================= 
+				* Use class "ph-full" to enable fullscreen size (no effect on small screens!).
+				* Use class "ph-full-m" to enable fullscreen size on small screens.
+				* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg", "ph-cap-xxlg" "ph-cap-xxxlg" or "ph-cap-xxxxlg" to set caption size (no class = default size).
+				* Use class "ph-center" to align the content to the center. 
+				* Use class "ph-caption-parallax" to enable caption parallax.
+				* Use class "ph-image-parallax" to enable image/video parallax (if image/video exist).
+				* Use class "ph-bg-is-light" if needed, it makes the elements dark and more visible if you use a very light background image (effect only if the image/video exist).
+				-->
+				<div id="page-header" class="ph-full ph-full-m ph-center ph-cap-xxxxlg ph-image-parallax ph-caption-parallax">
+
+					<!-- Begin page header image 
+					============================= 
+					* Use class "ph-image-grayscale" to enable black & white image.
+					* Use class "ph-image-cover-*" to set image overlay opacity. For example "ph-image-cover-2" or "ph-image-cover-2-5" (up to "ph-image-cover-9-5"). 
+					-->
+					<!-- <div class="ph-image ph-image-cover-2">
+						<div class="ph-image-inner">
+							<img src="assets/img/page-header/ph-1.jpg" alt="Image">
+						</div>
+					</div> -->
+					<!-- End page header image -->
+
+					<!-- Begin page header video 
+					============================= 
+					* Use class "ph-video-grayscale" to enable black & white video.
+					* Use class "ph-video-cover-*" to set video overlay opacity. For example "ph-video-cover-2" or "ph-video-cover-2-5" (up to "ph-video-cover-9-5"). 
+					* Use attribute "loop" in <video> tag to make the video play repeatedly.
+					-->
+					<div class="ph-video ph-video-grayscale ph-video-cover-5">
+						<div class="ph-video-inner">
+							<video loop="" muted="" autoplay="" playsinline="" preload="metadata" poster="assets/vids/1920/video-1-1920.jpg">
+								<source src="assets/vids/placeholder.webm" data-src="assets/vids/hero.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+					<!-- End page header video -->
+						
+					<div class="page-header-inner tt-wrap">
+
+						<div class="ph-caption">
+							<div class="ph-caption-inner">
+								<!-- <h2 class="ph-caption-subtitle">Subtitle</h2> -->
+								<h1 class="ph-caption-title">Uplifting spirits<br> for over a century</h1>
+								<div class="ph-caption-description max-width-700">
+									Our legacy spans<br> over a 100 years
+								</div>
+							</div> <!-- /.ph-caption-inner -->
+						</div> <!-- /.ph-caption -->
+
+					</div> <!-- /.page-header-inner -->
+
+					<!-- Begin page header mask
+					============================ 
+					Note: ph-mask is basically a clone of caption. If you want to use a different text on the mask then it is a bit tricky to fit. For better results, make sure that it will be the same length as possible as the original caption text (especially the title). It should also contain the same number of lines. Sometimes this can be difficult to achieve, in which case we recommend simply using identical text to the original caption.
+					-->
+					<div class="page-header-inner ph-mask">
+						<div class="ph-mask-inner tt-wrap">
+
+							<div class="ph-caption">
+								<div class="ph-caption-inner">
+									<!-- <h2 class="ph-caption-subtitle">Subtitle</h2> -->
+									<h1 class="ph-caption-title">DCSL<br> GROUP</h1>
+									<div class="ph-caption-description max-width-700">
+										Our legacy spans<br> over a 100 years
+									</div>
+								</div> <!-- /.ph-caption-inner -->
+							</div> <!-- /.ph-caption -->
+
+						</div> <!-- /.ph-mask-inner -->
+					</div>
+					<!-- End page header mask -->
+
+
+					<!-- Begin social buttons
+					==========================
+					<div class="ph-social">
+						<ul>
+							<li><a href="https://www.facebook.com/themetorium" class="tt-magnetic-item" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href="https://dribbble.com/Themetorium" class="tt-magnetic-item" target="_blank" rel="noopener"><i class="fa-brands fa-dribbble"></i></a></li>
+							<li><a href="https://www.behance.net/Themetorium" class="tt-magnetic-item" target="_blank" rel="noopener"><i class="fa-brands fa-behance"></i></a></li>
+							<li><a href="https://www.youtube.com/" class="tt-magnetic-item" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a></li>
+							<li><a href="https://x.com/Themetorium" class="tt-magnetic-item" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a></li> 
+						</ul>
+					</div>
+					End social buttons -->
+
+					<!-- Begin scroll down
+					=======================
+					* Note: Circle shown only if class "ph-full" or "ph-full-m" is enabled in "page-header" but not on small screens! Otherwise, only the arrow icon will be shown to save space.
+					-->
+					<div class="tt-scroll-down">
+						<!-- You can change "data-offset" attribute to set scroll top offset -->
+						<a href="#tt-page-content" class="tt-scroll-down-inner tt-magnetic-item" data-offset="0">
+							<div class="tt-scrd-icon"></div>
+							<svg viewBox="0 0 500 500">
+								<defs>
+									<path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle"></path>
+								</defs>
+								<text dy="30">
+									<!-- If you change the text, you probably have to change the CSS parameters as well. In the "theme.css" file, find ".tt-scroll-down text {" and change the "font-size" and "letter-spacing" to fit the text correctly. -->
+									<textPath xlink:href="#textcircle">Scroll to Explore - Scroll to Explore -</textPath>
+								</text>
+							</svg>
+						</a> <!-- /.tt-scroll-down-inner -->
+					</div>
+					<!-- End scroll down -->
+
+				</div>
+				<!-- End page header -->
+
+
+				<!-- *************************************
+				*********** Begin page content *********** 
+				************************************** -->
+				<div id="tt-page-content">
+
+
+					<!-- =======================
+					///// Begin tt-section /////
+					============================ 
+					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc.
+					* You can use classes "border-top" and "border-bottom" if needed. 
+					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+					-->
+					<div class="tt-section padding-top-xlg-140 padding-bottom-xlg-120">
+						<div class="tt-section-inner tt-wrap">
+
+							<div class="tt-row">
+								<div class="tt-col-lg-4">
+
+									<!-- Begin tt-Heading 
+									====================== 
+									* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg", "tt-heading-xxlg" or "tt-heading-xxxlg" to set caption size (no class = default size).
+									* Use class "tt-heading-center" to align tt-Heading to center.
+									* Use class "tt-text-reveal" or "tt-anim-fadeinup" with title or subtitle element to enable text reveal animation.
+									* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+									-->
+									<div class="tt-heading tt-heading-xlg">
+										<!-- <h3 class="tt-heading-subtitle tt-text-reveal">Featured</h3> -->
+										<h2 class="tt-heading-title tt-text-reveal">Story of Arrack</h2> <!-- You can use <br> to break a text line if needed -->
+									</div>
+									<!-- End tt-Heading -->
+
+									<div class="tt-text-uppercase margin-top-30 tt-text-reveal">
+										Over 100 years<br> of excellence
+									</div>
+
+								</div> <!-- /.tt-col -->
+
+								<div class="tt-col-lg-1 padding-top-30">
+								</div> <!-- /.tt-col -->
+
+								<div class="tt-col-lg-7 tt-align-self-center">
+
+									<div class="text-xxlg font-500 tt-text-reveal">
+										What begins as sap from the coconut flower “Toddy” is naturally fermented and distilled to perfection to produce pure coconut arrack, 
+                    one of the most natural and organic beverages in the world. Coconut Arrack is unique & indigenous to Sri Lanka with its tropical,
+                     sunny flavours.
+									</div>
+
+									<a href="/" class="tt-btn tt-btn-outline margin-top-40 tt-magnetic-item tt-anim-fadeinup">
+										<span data-hover="Read More">Read More</span>
+									</a>
+									
+								</div> <!-- /.tt-col -->
+							</div><!-- /.tt-row -->
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+
+					<!-- =======================
+					///// Begin tt-section /////
+					============================ 
+					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc.
+					* You can use classes "border-top" and "border-bottom" if needed. 
+					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+					-->
+					<div class="tt-section padding-top-xlg-140 border-top">
+						<div class="tt-section-inner tt-wrap">
+
+							<div class="tt-row">
+								<div class="tt-col-xl-8">
+
+									<!-- Begin tt-Heading 
+									====================== 
+									* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg", "tt-heading-xxlg" or "tt-heading-xxxlg" to set caption size (no class = default size).
+									* Use class "tt-heading-center" to align tt-Heading to center.
+									* Use class "tt-text-reveal" or "tt-anim-fadeinup" with title or subtitle element to enable text reveal animation.
+									* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+									-->
+									<div class="tt-heading tt-heading-xxxlg">
+										<h3 class="tt-heading-subtitle tt-text-reveal">Featured</h3>
+										<h2 class="tt-heading-title tt-text-reveal">Brands</h2> <!-- You can use <br> to break a text line if needed -->
+									</div>
+									<!-- End tt-Heading -->
+
+									<div class="tt-text-uppercase max-width-400 margin-left-xlg-10-p text-pretty tt-text-reveal">
+										Explore featured brands. Click on each one for an overview (currently not going anywhere)
+									</div>
+
+								</div> <!-- /.tt-col -->
+							
+								<div class="tt-col-xl-4 tt-align-self-end margin-top-30">
+
+									<!-- Begin big round button 
+									============================ -->
+									<div class="tt-big-round-ptn tt-anim-fadeinup">
+										<a href="/" class="tt-big-round-ptn-holder tt-magnetic-item">
+											<div class="tt-big-round-ptn-inner">All<br> Brands</div>
+										</a>
+									</div>
+									<!-- End big round button -->
+
+								</div> <!-- /.tt-col -->
+							</div><!-- /.tt-row -->
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+
+					<!-- =======================
+					///// Begin tt-section /////
+					============================ 
+					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc.
+					* You can use classes "border-top" and "border-bottom" if needed. 
+					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+					-->
+					<div class="tt-section no-padding-top padding-top-xlg-80 padding-bottom-20 padding-bottom-xlg-80">
+						<div class="tt-section-inner">
+
+							<!-- Begin portfolio preview list 
+							==================================
+							* Use class "tt-ppli-portrait" to enable preview image portrait mode.
+							* Use class "tt-ppli-hover" to enable item hover effect.
+							-->
+							<div class="tt-portfolio-preview-list tt-ppli-portrait tt-ppli-hover">
+								<div class="tt-ppl-items-list">
+
+									<!-- Begin list item 
+									===================== -->
+									<a href="/" class="tt-ppl-item">
+										<div class="tt-ppli-preview">
+											<div class="tt-ppli-preview-image">
+												<!-- Note: The recommended maximum image width is 800px -->
+												<img src="assets/img/test.avif" alt="Image">
+											</div> <!-- /.tt-ppli-preview-image -->
+										</div> <!-- /.tt-ppli-preview -->
+
+										<div class="tt-ppl-item-inner">
+											<div class="tt-ppl-item-holder">
+												<div class="tt-ppli-col tt-ppli-col-count">
+													<div class="tt-ppli-count"></div>
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-caption">
+													<div class="tt-ppli-caption">
+														<h2 class="tt-ppli-title">Argenté </h2>
+														<div class="tt-ppli-categories">
+															<div class="tt-ppli-category">The Pinnacle</div>
+															<!-- <div class="tt-ppli-category">Varia</div> -->
+														</div> <!-- /.tt-ppli-categories -->
+													</div> <!-- /.tt-ppli-caption -->
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
+													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
+														Argenté is a blend of perfectly matured coconut spirits, the youngest of which is aged for a minimum of 20 years. 
+													</div> <!-- /.tt-ppli-info -->
+												</div> <!-- /.tt-ppli-col -->
+											</div> <!-- /.tt-ppl-item-holder -->
+										</div> <!-- /.tt-ppl-item-inner -->
+									</a>
+									<!-- End list item -->
+
+									<!-- Begin list item 
+									===================== -->
+									<a href="/" class="tt-ppl-item">
+										<div class="tt-ppli-preview">
+											<div class="tt-ppli-preview-image">
+												<!-- Note: The recommended maximum image width is 800px -->
+												<img src="assets/img/test3.avif" alt="Image">
+											</div> <!-- /.tt-ppli-preview-image -->
+										</div> <!-- /.tt-ppli-preview -->
+
+										<div class="tt-ppl-item-inner">
+											<div class="tt-ppl-item-holder">
+												<div class="tt-ppli-col tt-ppli-col-count">
+													<div class="tt-ppli-count"></div>
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-caption">
+													<div class="tt-ppli-caption">
+														<h2 class="tt-ppli-title">Narikela</h2>
+														<div class="tt-ppli-categories">
+															<div class="tt-ppli-category">The Spirit of Sri Lanka</div>
+															<!-- <div class="tt-ppli-category">Varia</div> -->
+														</div> <!-- /.tt-ppli-categories -->
+													</div> <!-- /.tt-ppli-caption -->
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
+													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
+														Pure coconut spirits.
+													</div> <!-- /.tt-ppli-info -->
+												</div> <!-- /.tt-ppli-col -->
+											</div> <!-- /.tt-ppl-item-holder -->
+										</div> <!-- /.tt-ppl-item-inner -->
+									</a>
+									<!-- End list item -->
+
+									<!-- Begin list item 
+									===================== -->
+									<a href="/" class="tt-ppl-item">
+										<div class="tt-ppli-preview">
+											<div class="tt-ppli-preview-image">
+												<!-- Note: The recommended maximum image width is 800px -->
+												<img src="assets/img/test2.avif" alt="Image">
+											</div> <!-- /.tt-ppli-preview-image -->
+										</div> <!-- /.tt-ppli-preview -->
+
+										<div class="tt-ppl-item-inner">
+											<div class="tt-ppl-item-holder">
+												<div class="tt-ppli-col tt-ppli-col-count">
+													<div class="tt-ppli-count"></div>
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-caption">
+													<div class="tt-ppli-caption">
+														<h2 class="tt-ppli-title">White Label</h2>
+														<div class="tt-ppli-categories">
+															<div class="tt-ppli-category">Blended Coconut Spirits</div>
+															<!-- <div class="tt-ppli-category">Varia</div> -->
+														</div> <!-- /.tt-ppli-categories -->
+													</div> <!-- /.tt-ppli-caption -->
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
+													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
+														Crystal clear arrack.
+													</div> <!-- /.tt-ppli-info -->
+												</div> <!-- /.tt-ppli-col -->
+											</div> <!-- /.tt-ppl-item-holder -->
+										</div> <!-- /.tt-ppl-item-inner -->
+									</a>
+									<!-- End list item -->
+
+									<!-- Begin list item 
+									===================== -->
+									<a href="single-project-4.html" class="tt-ppl-item">
+										<div class="tt-ppli-preview">
+											<div class="tt-ppli-preview-image">
+												<!-- Note: The recommended maximum image width is 800px -->
+												<img src="assets/img/test3.avif" alt="Image">
+											</div> <!-- /.tt-ppli-preview-image -->
+										</div> <!-- /.tt-ppli-preview -->
+
+										<div class="tt-ppl-item-inner">
+											<div class="tt-ppl-item-holder">
+												<div class="tt-ppli-col tt-ppli-col-count">
+													<div class="tt-ppli-count"></div>
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-caption">
+													<div class="tt-ppli-caption">
+														<h2 class="tt-ppli-title">Blue Label</h2>
+														<div class="tt-ppli-categories">
+															<div class="tt-ppli-category">Blended Coconut Spirits</div>
+															<!-- <div class="tt-ppli-category">Varia</div> -->
+														</div> <!-- /.tt-ppli-categories -->
+													</div> <!-- /.tt-ppli-caption -->
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
+													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
+														Perfectly balanced arrack.
+													</div> <!-- /.tt-ppli-info -->
+												</div> <!-- /.tt-ppli-col -->
+											</div> <!-- /.tt-ppl-item-holder -->
+										</div> <!-- /.tt-ppl-item-inner -->
+									</a>
+									<!-- End list item -->
+
+									<!-- Begin list item 
+									===================== -->
+									<a href="single-project-5.html" class="tt-ppl-item">
+										<div class="tt-ppli-preview">
+											<div class="tt-ppli-preview-image">
+												<!-- Note: The recommended maximum image width is 800px -->
+												<img src="assets/img/test2.avif" alt="Image">
+											</div> <!-- /.tt-ppli-preview-image -->
+										</div> <!-- /.tt-ppli-preview -->
+
+										<div class="tt-ppl-item-inner">
+											<div class="tt-ppl-item-holder">
+												<div class="tt-ppli-col tt-ppli-col-count">
+													<div class="tt-ppli-count"></div>
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-caption">
+													<div class="tt-ppli-caption">
+														<h2 class="tt-ppli-title">Black Opal</h2>
+														<div class="tt-ppli-categories">
+															<div class="tt-ppli-category">Blended Coconut Spirits</div>
+															<!-- <div class="tt-ppli-category">Varia</div> -->
+														</div> <!-- /.tt-ppli-categories -->
+													</div> <!-- /.tt-ppli-caption -->
+												</div> <!-- /.tt-ppli-col -->
+												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
+													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
+														For rich and smooth feel.
+													</div> <!-- /.tt-ppli-info -->
+												</div> <!-- /.tt-ppli-col -->
+											</div> <!-- /.tt-ppl-item-holder -->
+										</div> <!-- /.tt-ppl-item-inner -->
+									</a>
+									<!-- End list item -->
+
+								</div> <!-- /.tt-ppl-items-list -->
+							</div>
+							<!-- End portfolio preview list -->
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+
+					<!-- =======================
+					///// Begin tt-section /////
+					============================ 
+					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc.
+					* You can use classes "border-top" and "border-bottom" if needed. 
+					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+					-->
+					<div class="tt-section no-padding padding-top-xlg-40 padding-bottom-xlg-40">
+						<div class="tt-section-inner">
+
+							<!-- Begin crossed scrolling text 
+							================================== -->
+							<div class="tt-scrolling-text-crossed">
+								<div class="tt-scrolling-text-crossed-inner">
+
+									<!-- Begin scrolling text
+									==========================
+									* Use class "scrt-color-reverse" to reverse colors.
+									* Use class "scrt-dyn-separator" to enable dynamic separator (works only with data-change-direction="true").
+									* Note: Ideally, the text should be long enough to cover the entire width of the screen. If you use a very short text (e.g. one word), duplicate it (including the separator) to compensate for the optimal length of the text.
+									Available data attributes:
+									  data-scroll-speed="10" ...................(lower number = higher speed). 
+									  data-change-direction="true" .............(true/false).
+									  data-opposite-direction="true" ...........(true/false).
+									-->
+									<div class="tt-scrolling-text scrt-dyn-separator scrt-color-reverse" data-scroll-speed="7" data-change-direction="true" data-opposite-direction="true">
+										<div class="tt-scrt-inner">
+											<div class="tt-scrt-content">
+												Over 100 years of experience 
+												<span class="tt-scrt-separator">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+														<path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path>
+													</svg>
+												</span> 
+											</div> <!-- /.tt-scrt-content -->
+										</div> <!-- /.tt-scrt-inner -->
+									</div> <!-- /.tt-scrolling-text -->
+									
+
+									<!-- Begin scrolling text
+									==========================
+									* Use class "scrt-color-reverse" to reverse colors.
+									* Use class "scrt-dyn-separator" to enable dynamic separator (works only with data-change-direction="true").
+									* Note: Ideally, the text should be long enough to cover the entire width of the screen. If you use a very short text (e.g. one word), duplicate it (including the separator) to compensate for the optimal length of the text.
+									Available data attributes:
+									  data-scroll-speed="10" ...................(lower number = higher speed). 
+									  data-change-direction="true" .............(true/false).
+									  data-opposite-direction="true" ...........(true/false).
+									-->
+									<div class="tt-scrolling-text scrt-dyn-separator" data-scroll-speed="7" data-change-direction="true">
+										<div class="tt-scrt-inner">
+											<div class="tt-scrt-content">
+												Over 100 years of experience 
+												<span class="tt-scrt-separator">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+														<path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path>
+													</svg>
+												</span>
+											</div> <!-- /.tt-scrt-content -->
+										</div> <!-- /.tt-scrt-inner -->
+									</div> <!-- /.tt-scrolling-text -->
+
+								</div> <!-- /.tt-scrolling-text-crossed-inner -->
+							</div>
+							<!-- End crossed scrolling text -->
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+
+					<!-- =======================
+					///// Begin tt-section /////
+					============================ 
+					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc.
+					* You can use classes "border-top" and "border-bottom" if needed. 
+					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+					-->
+					<div class="tt-section no-padding-top">
+						<div class="tt-section-inner">
+
+							<!-- Begin clipper
+							=================== 
+							* Use class "tt-clipper-grayscale" to enable black & white background.
+							* Use class "tt-clipper-cover-*" to set background overlay opacity. For example "tt-clipper-cover-2" or "tt-clipper-cover-2-5" (up to "tt-clipper-cover-9-5").
+							* Supported media: "YouTube", "Vimeo", ".mp4", ".mp3 (requires data-type="html5video")". Just add your media link to the href="" tag.
+							-->
+							<div class="tt-clipper">
+								<a href="/" class="tt-clipper-inner" data-cursor="Play<br>Reel" data-fancybox="" data-caption="My awesome showreel. :)">
+
+									<!-- Clipper background (image) -->
+									<!-- <div class="tt-clipper-bg">
+										<img src="assets/vids/1920/showreel-1920.jpg" loading="lazy" alt="Image">
+									</div> -->
+
+									<!-- Clipper background (video) -->
+									<div class="tt-clipper-bg">
+										<video loop="" muted="" autoplay="" playsinline="" preload="metadata" poster="assets/vids/1920/showreel-1920.jpg">
+											<source src="assets/vids/placeholder.webm" data-src="assets/vids/middle_video.webm" type="video/webm">
+										</video>
+									</div>
+
+									<div class="tt-clipper-content">
+
+										<!-- Clipper button (for mobile devices only!) -->
+										<div class="tt-clipper-btn">
+											<i class="fa-solid fa-play"></i>
+										</div>
+
+									</div> <!-- /.tt-clipper-content -->
+								</a> 
+							</div>
+							<!-- End clipper -->
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+
+					<!-- =======================
+					///// Begin tt-section /////
+					============================ 
+					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc.
+					* You can use classes "border-top" and "border-bottom" if needed. 
+					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+					-->
+					<div class="tt-section border-bottom">
+						<div class="tt-section-inner tt-wrap">
+
+							<!-- Begin sticker
+							=================== -->
+							<div class="tt-sticker">
+
+								<div class="tt-row">
+									<div class="tt-col-lg-4 margin-bottom-40">
+
+										<!-- Begin sticky element
+										========================== -->
+										<div class="tt-sticker-sticky tt-sticky-element">
+
+											<!-- Begin tt-Heading 
+											====================== 
+											* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg", "tt-heading-xxlg" or "tt-heading-xxxlg" to set caption size (no class = default size).
+											* Use class "tt-heading-center" to align tt-Heading to center.
+											* Use class "tt-text-reveal" or "tt-anim-fadeinup" with title or subtitle element to enable text reveal animation.
+											* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+											-->
+											<div class="tt-heading tt-heading-xxlg">
+												<h3 class="tt-heading-subtitle tt-text-reveal">Then & Now</h3>
+												<h2 class="tt-heading-title tt-text-reveal">As times have changed, </h2>
+
+											</div>
+											<!-- End tt-Heading -->
+
+											<a href="/" class="tt-btn tt-btn-outline tt-magnetic-item tt-anim-fadeinup">
+												<span data-hover="Read More">Read More</span>
+											</a>
+
+										</div>
+										<!-- End sticky element -->
+
+									</div> <!-- /.tt-col -->
+
+									<div class="tt-col-lg-8">
+
+										<!-- Begin sticker scroller
+										============================ -->
+										<div class="tt-sticker-scroller">
+
+											<!-- Begin sticky testimonials 
+											============================== 
+											* Use class "tt-stte-center" to align the content to the center.
+											* Use class "tt-stte-reversed-colors" to enable reversed colors.
+											* Note: All cards have equal height, based on the tallest card.
+											-->
+											<div class="tt-sticky-testimonials tt-stte-reversed-colors">
+
+												<!-- Begin sticky testimonials item -->
+												<div class="tt-stte-item">
+													<div class="tt-stte-card cursor-alter">
+														
+														<div class="tt-stte-card-caption">
+															<div class="tt-stte-text">
+																"we’ve progressed and prevailed by incorporating, Best-in-class practices from around the world."
+															</div>
+														</div> <!-- /.tt-stte-card-caption -->
+													</div> <!-- /.tt-stte-card -->
+												</div>
+												<!-- End sticky testimonials item -->
+
+												<!-- Begin sticky testimonials item -->
+												<div class="tt-stte-item">
+													<div class="tt-stte-card cursor-alter">
+														<div class="tt-stte-card-caption">
+															<div class="tt-stte-text">
+																"Our blends source only the purest toddy, harvested traditionally,as has been done for over a century."
+															</div>
+														</div> <!-- /.tt-stte-card-caption -->
+													</div> <!-- /.tt-stte-card -->
+												</div>
+												<!-- End sticky testimonials item -->
+
+												<!-- Begin sticky testimonials item -->
+												<div class="tt-stte-item">
+													<div class="tt-stte-card cursor-alter">
+												
+														<div class="tt-stte-card-caption">
+															<div class="tt-stte-text">
+																"Some more related contents.
+															</div>
+
+														</div> <!-- /.tt-stte-card-caption -->
+													</div> <!-- /.tt-stte-card -->
+												</div>
+												<!-- End sticky testimonials item -->
+
+												<!-- Begin sticky testimonials item -->
+												<div class="tt-stte-item">
+													<div class="tt-stte-card cursor-alter">
+														<div class="tt-stte-card-caption">
+															<div class="tt-stte-text">
+																"Another related content".
+															</div>
+														</div> <!-- /.tt-stte-card-caption -->
+													</div> <!-- /.tt-stte-card -->
+												</div>
+												<!-- End sticky testimonials item -->
+
+												<!-- Begin sticky testimonials item -->
+												<div class="tt-stte-item">
+													<div class="tt-stte-card cursor-alter">
+														<div class="tt-stte-card-caption">
+															<div class="tt-stte-text">
+																"If needed more related content can be added"".
+															</div>
+														</div> <!-- /.tt-stte-card-caption -->
+													</div> <!-- /.tt-stte-card -->
+												</div>
+												<!-- End sticky testimonials item -->
+
+											</div>
+											<!-- End sticky testimonials  -->
+
+										</div>
+										<!-- End sticker scroller -->
+
+									</div> <!-- /.tt-col -->
+								</div> <!-- /.tt-row -->
+
+							</div>
+							<!-- End sticker -->
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+
+
+
+
+					<!-- =======================
+					///// Begin tt-section /////
+					============================ 
+					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc.
+					* You can use classes "border-top" and "border-bottom" if needed. 
+					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+					-->
+					<div class="tt-section padding-top-xlg-120 padding-bottom-xlg-120">
+						<div class="tt-section-inner tt-wrap">
+
+							<div class="tt-row margin-bottom-40">
+								<div class="tt-col-xl-8">
+
+									<!-- Begin tt-Heading 
+									====================== 
+									* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg", "tt-heading-xxlg" or "tt-heading-xxxlg" to set caption size (no class = default size).
+									* Use class "tt-heading-center" to align tt-Heading to center.
+									* Use class "tt-text-reveal" or "tt-anim-fadeinup" with title or subtitle element to enable text reveal animation.
+									* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+									-->
+									<div class="tt-heading tt-heading-xxxlg no-margin">
+										<h2 class="tt-heading-title tt-text-reveal">Our legacy spans over a 100 years. From humble beginnings to a state-of-the-art operation providing the finest spirits crafted and refined for connoisseurs of taste.</h2> <!-- You can use <br> to break a text line if needed -->
+									</div>
+									<!-- End tt-Heading -->
+
+								</div> <!-- /.tt-col -->
+							
+								<div class="tt-col-xl-4 tt-align-self-end tt-xl-column-reverse margin-top-40">
+
+									<div class="max-width-600 margin-bottom-10 tt-text-uppercase text-pretty tt-text-reveal">
+										Learn more about DCSL Mixology<br>and get the ultimate taste!
+									</div>
+
+									<!-- Begin big round button 
+									============================ -->
+									<div class="tt-big-round-ptn margin-top-30 margin-bottom-xlg-80 tt-anim-fadeinup">
+										<a href="contact.html" class="tt-big-round-ptn-holder tt-magnetic-item">
+											<div class="tt-big-round-ptn-inner">See our <br> recipies</div>
+										</a>
+									</div>
+									<!-- End big round button -->
+
+								</div> <!-- /.tt-col -->
+							</div><!-- /.tt-row --> 
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+
+				</div>
+				<!-- End page content -->
+
+
+				<!-- ======================
+				///// Begin tt-footer /////
+				=========================== -->
+				<footer id="tt-footer" class="border-top">
+					<div class="tt-footer-inner tt-wrap">
+
+						<div class="tt-row">
+							<div class="tt-col-xl-3 tt-col-sm-6">
+								<div class="tt-footer-widget">
+									<h5 class="tt-footer-widget-heading">Links</h5>
+									<ul class="tt-footer-widget-list">
+										<li><a href="dummy.html" class="tt-link">The Pinnacle</a></li>
+										<li><a href="dummy.html" class="tt-link">Cocktails</a></li>
+										<li><a href="dummy.html" class="tt-link">Management Team</a></li>
+										<li><a href="dummy.html" class="tt-link">Board of Directors</a></li>
+									</ul> <!-- /.tt-footer-widget-list -->
+								</div> <!-- /.tt-footer-widget -->
+							</div> <!-- /.tt-col -->
+
+							<div class="tt-col-xl-3 tt-col-sm-6">
+								<div class="tt-footer-widget">
+									<h5 class="tt-footer-widget-heading">Sitemap</h5>
+									<ul class="tt-footer-widget-list">
+										<li><a href="about-me.html" class="tt-link">About Us</a></li>
+										<li><a href="portfolio.html" class="tt-link">Brands</a></li>
+										<li><a href="services.html" class="tt-link">Investor Relations</a></li>
+										<li><a href="contact.html" class="tt-link">Contact</a></li>
+									</ul> <!-- /.tt-footer-widget-list -->
+								</div> <!-- /.tt-footer-widget -->
+							</div> <!-- /.tt-col -->
+
+							<div class="tt-col-xl-3 tt-col-sm-6">
+								<div class="tt-footer-widget">
+									<h5 class="tt-footer-widget-heading">Contact</h5>
+									<ul class="tt-footer-widget-list">
+										<li><a href="mailto:contact@dcsl.com" class="tt-link">contact@dcsl.com</a></li>
+										<li><a href="tel:+(94)456789000" class="tt-link"> +(94) 456 789 000</a></li>
+										
+									</ul> <!-- /.tt-footer-widget-list -->
+								</div> <!-- /.tt-footer-widget -->
+							</div> <!-- /.tt-col -->
+
+							<div class="tt-col-xl-3 tt-col-sm-6 tt-justify-content-xl-end">
+								<div class="tt-footer-widget">
+									<ul class="tt-footer-widget-list">
+										<li>
+											<!-- You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-footer-logo img").-->
+											<div class="tt-footer-logo"> 
+												<a href="index.html" class="tt-magnetic-item">
+													<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-logo-light" loading="lazy" alt="Logo"> <!-- logo light -->
+													<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-logo-dark" loading="lazy" alt="Logo"> <!-- logo dark -->
+												</a>
+											</div> <!-- /.tt-footer-logo -->  
+										</li>
+										<li>
+											<div class="">
+												<svg id="year-animation" height="200" stroke="#fff" stroke-width="6" class="text-line" width="130%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">1913</text></svg>
+											</div> <!-- /.tt-footer-copyright -->
+										</li>
+									</ul> <!-- /.tt-footer-widget-list -->
+								</div> <!-- /.tt-footer-widget -->
+							</div> <!-- /.tt-col -->
+						</div> <!-- /.tt-row -->
+						<center>
+							<div class="tt-footer-copyright">
+												©  <a href="#" class="tt-link" target="_blank" rel="nofollow noopener"> DCSL</a><br> 
+												All Rights Reserved
+											</div> <!
+						</center>
+					</div> <!-- /.tt-section-inner -->
+				</footer>
+				<!-- End tt-footer -->
+
+
+				<!-- Begin scroll to top button
+				================================ -->
+				<a href="#" class="tt-scroll-to-top">
+					<div class="tt-stt-progress tt-magnetic-item">
+						<svg class="tt-stt-progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+							<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+						</svg>
+					</div> <!-- /.tt-stt-progress -->
+				</a>
+				<!-- End scroll to top button -->
+
+			</div>
+			<!-- End content wrap -->
+
+
+		</main>
+		<!-- End body inner -->
+
+
+        
+
+		<!-- ====================
+		///// Scripts below /////
+		===================== -->
+
+		<!-- Core JS -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
+
+		<!-- Libs and Plugins JS -->
+		<script src="assets/vendor/gsap/gsap.min.js"></script> <!-- GSAP JS (https://gsap.com/) -->
+		<script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script> <!-- GSAP ScrollToPlugin JS (https://gsap.com/docs/v3/Plugins/ScrollToPlugin/) -->
+		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script> <!-- GSAP ScrollTrigger JS (https://gsap.com/docs/v3/Plugins/ScrollTrigger/) -->
+		<script src="assets/vendor/lenis.min.js"></script> <!-- Lenis (smooth scroll) JS (https://lenis.darkroom.engineering/) -->
+		<script src="assets/vendor/isotope/imagesloaded.pkgd.min.js"></script> <!-- imagesloaded JS (http://imagesloaded.desandro.com) -->
+		<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
+		<script src="assets/vendor/isotope/packery-mode.pkgd.min.js"></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
+		<script src="assets/vendor/fancybox/js/fancybox.umd.js"></script> <!-- Fancybox (lightbox) JS (https://fancyapps.com/) -->
+		<script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script> <!-- Swiper JS (https://swiperjs.com/) -->
+
+		<!-- Master JS -->
+		<script src="assets/js/theme.js"></script>
+		<script type="text/javascript">
+			const svgElement = document.getElementById('year-animation');
+
+const observer = new IntersectionObserver((entries, observer) => {
+entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('animate');
+    observer.disconnect();
+    }
+});
+}, { threshold: 0.5 });
+
+observer.observe(svgElement);
+
+		</script>
+
+
+
+	
+
+</body></html>
