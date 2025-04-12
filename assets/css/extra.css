@@ -22,3 +22,13 @@
   font-family: 'Anton', sans-serif;
 }
 
+#bottle {
+  max-width: 60%;
+  height: auto;
+  position: relative;
+
+}
+
+.left-aligned {
+  text-align: left;
+}

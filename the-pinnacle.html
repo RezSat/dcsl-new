@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+		<!-- Title -->
+		<title>The Pinnacle - DCSL</title>
+
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+		<!-- Google fonts (https://fonts.google.com/) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
+		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+		<link rel="stylesheet" href="assets/vendor/fancybox/css/fancybox.css"> <!-- Fancybox (lightbox) JS (https://fancyapps.com/) -->
+		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css"> <!-- Swiper CSS (https://swiperjs.com/) -->
+
+		<!-- Master CSS -->
+		<link rel="stylesheet" href="assets/css/helper.css">
+		<link rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/extra.css">
+		<link rel="stylesheet" href="assets/css/page.css" />
+
+		<!-- Light style CSS -->
+		<link rel="stylesheet" href="assets/css/theme-light.css">
+		<style type="text/css">
+			.text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  font-size: 140px;
+  visibility: hidden;
+  /* Start hidden */
+}
+
+.text-line.animate {
+  visibility: visible;
+  /* Visible when animated */
+  animation: dash 2.5s linear forwards, filling 2.5s ease-in forwards;
+
+}
+
+.text-line text {
+  font-family: 'Anton', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  0%,
+  90% {
+    fill: #fff;
+    fill-opacity: 0;
+  }
+
+  100% {
+    fill: #fff;
+    fill-opacity: 1;
+    
+  }
+}
+		</style>
+
+	</head>
+
+	
+	<!-- ===========
+	///// Body /////
+	================
+	* Use class "tt-transition" to enable page transitions.
+	* Use class "tt-magic-cursor" to enable magic cursor.
+	* Use class "tt-noise" to enable the background noise effect on the whole page. 
+	* Use class "tt-smooth-scroll" to enable page smooth scroll. 
+	* Use class "tt-lightmode-default" to enable light style by default (you must clear your browser's cookies and cache first!).
+	* Note: there may be classes that are specific to this page only!
+	-->
+	<body id="body" class="tt-transition tt-noise tt-magic-cursor tt-smooth-scroll">
+
+
+		<!-- *************************************
+		*********** Begin body inner ************* 
+		************************************** -->
+		<main id="body-inner">
+
+
+			<!-- Begin page transition (do not remove!!!) 
+			=========================== -->
+			<div id="tt-page-transition">
+				<div class="tt-ptr-overlay-top tt-noise"></div>
+				<div class="tt-ptr-overlay-bottom tt-noise"></div>
+				<div class="tt-ptr-preloader">
+					<div class="tt-ptr-prel-content">
+						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".tt-ptr-prel-image"). -->
+						<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-ptr-prel-image" alt="Logo">
+					</div> <!-- /.tt-ptr-prel-content -->
+				</div> <!-- /.tt-ptr-preloader -->
+			</div>
+			<!-- End page transition -->
+
+			<!-- Begin magic cursor 
+			======================== -->
+			<div id="magic-cursor">
+				<div id="ball"></div>
+			</div>
+			<!-- End magic cursor --> 
+
+			<!-- ===================
+			///// Begin header /////
+			========================
+			* Use class "tt-header-scroll" to hide header on scroll down and show on scroll up.
+			* Use class "tt-header-fixed" to set header to fixed position (no effect with class "tt-header-scroll").
+			* Use class "tt-header-filled" to add background color to header on scroll (effect only with class "tt-header-scroll" and "tt-header-fixed").
+			* Use class "tt-header-alter" to enable alternative layout (for desktop only!).
+			-->
+			<header id="tt-header" class="tt-header-alter tt-header-scroll tt-header-filled">
+				<div class="tt-header-inner tt-noise"> 
+
+					<div class="tt-header-col tt-header-col-left">
+
+						<!-- Begin logo 
+						================ 
+						Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img").
+						-->
+						<div class="tt-logo"> 
+							<a href="index.html" class="tt-magnetic-item">
+								<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-logo-light" alt="Logo"> <!-- logo light -->
+								<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-logo-dark" alt="Logo"> <!-- logo dark -->
+							</a>
+						</div>
+						<!-- End logo -->
+
+					</div> <!-- /.tt-header-col -->
+
+					<div class="tt-header-col tt-header-col-center">
+
+						<!-- Begin main menu (classic)
+						===============================
+						* Use class "tt-m-menu-center" to align mobile menu to center.
+						-->
+						<nav class="tt-main-menu tt-m-menu-center">
+							<div class="tt-main-menu-holder">
+								<div class="tt-main-menu-inner">
+									<div class="tt-main-menu-content">
+
+										<!-- Begin main menu list -->
+										<ul class="tt-main-menu-list">
+
+											<!-- Begin submenu (submenu master)
+											==================================== -->
+											<li class="active"><a href="about-me.html">Home</a></li>
+
+											<li class="tt-submenu-wrap tt-submenu-master">
+												<div class="tt-submenu-trigger">
+													<a href="#">About Us</a>
+												</div> <!-- /.tt-submenu-trigger -->
+												<div class="tt-submenu">
+													<ul class="tt-submenu-list">
+
+														<li><a href="/">Story of Arrack</a></li>
+														<li><a href="/">Heritage</a></li>
+														<li><a href="/">Leadership</a></li>
+														<li><a href="/">Management Team</a></li>
+
+													</ul> <!-- /.tt-submenu-list -->
+												</div> <!-- /.tt-submenu -->
+											</li>
+											<!-- End submenu (sub-master) -->
+
+											<!-- Begin submenu (submenu master)
+											==================================== -->
+											<li class="tt-submenu-wrap tt-submenu-master">
+												<div class="tt-submenu-trigger">
+													<a href="#">Brands</a>
+												</div> <!-- /.tt-submenu-trigger -->
+												<div class="tt-submenu">
+													<ul class="tt-submenu-list">
+
+														<li><a href="/pinnacle.html">The Pinnacle</a></li>
+														<li><a href="/">Pure Coconut</a></li>
+														<li><a href="/">Submenu 1</a></li>
+														<li><a href="/">Submenu 2</a></li>
+														<li><a href="/">Submenu 3</a></li>
+														<li><a href="/">Submenu 4</a></li>
+
+													</ul> <!-- /.tt-submenu-list -->
+												</div> <!-- /.tt-submenu -->
+											</li>
+											<!-- End submenu (sub-master) -->
+
+											<li><a href="/">Cocktails</a></li>
+											<li><a href="/">News</a></li>
+
+											<!-- Begin submenu (submenu master)
+											====================================  -->
+											<li class="tt-submenu-wrap tt-submenu-master">
+												<div class="tt-submenu-trigger">
+													<a href="#">Company</a>
+												</div>  
+												<div class="tt-submenu">
+													<ul class="tt-submenu-list">
+
+														<li><a href="/">Investor Relations</a></li>
+														<li><a href="/">Corporate Governance</a></li>
+
+													</ul>
+												</div> 
+											</li>
+											<!--End submenu (sub-master) -->
+											
+											<!-- Begin submenu (submenu master)
+											==================================== 
+											<li class="tt-submenu-wrap tt-submenu-master">
+												<div class="tt-submenu-trigger">
+													<a href="#">Contact</a>
+												</div> /.tt-submenu-trigger 
+												<div class="tt-submenu">
+													<ul class="tt-submenu-list">
+
+														<li><a href="contact.html">Contact Form</a></li>
+														<li><a href="contact-simple.html">Contact Simple</a></li>
+
+													</ul>  /.tt-submenu-list 
+												</div>  /.tt-submenu 
+											</li>
+											End submenu (sub-master) -->
+
+
+										</ul>
+										<!-- End main menu list -->
+
+									</div> <!-- /.tt-main-menu-content -->
+								</div> <!-- /.tt-main-menu-inner -->
+							</div> <!-- /.tt-main-menu-holder -->
+
+						</nav> 
+						<!-- End main menu -->
+
+					</div> <!-- /.tt-header-col -->
+
+					<div class="tt-header-col tt-header-col-right">
+
+						<!-- Begin mobile menu toggle button (for "tt-main-menu") --> 
+						<div id="tt-m-menu-toggle-btn-wrap">
+							<div class="tt-m-menu-toggle-btn-text">
+								<span class="tt-m-menu-text-menu">Menu</span>
+								<span class="tt-m-menu-text-close">Close</span>
+							</div>
+							<div class="tt-m-menu-toggle-btn-holder">
+								<a href="#" class="tt-m-menu-toggle-btn"><span></span></a>
+							</div>
+						</div>
+						<!-- End mobile menu toggle button -->
+
+						<!-- Begin header button (hidden on small screens!) -->
+						<a href="contact.html" class="tt-btn tt-btn-secondary hide-from-xlg tt-magnetic-item">
+							<span data-hover="Contact">Contact</span>
+						</a>
+						<!-- End header button -->
+
+						<!-- Begin style switch button
+						<div class="tt-style-switch">
+							<div class="tt-style-switch-inner tt-magnetic-item">
+								<div class="tt-stsw-light">
+									<i class="fas fa-sun"></i>
+								</div>
+								<div class="tt-stsw-dark">
+									<i class="fas fa-moon"></i>
+								</div>
+							</div>
+						</div>
+						 End style switch button -->
+
+					</div> <!-- /.header-col -->
+				</div> <!-- /.header-inner -->
+			</header>
+			<!-- End header -->
+
+			
+			<!-- *************************************
+			*********** Begin content wrap *********** 
+			************************************** -->
+			<div id="tt-content-wrap">
+    
+
+    				<!-- ========================
+				///// Begin page header /////
+				============================= 
+				* Use class "ph-full" to enable fullscreen size (no effect on small screens!).
+				* Use class "ph-full-m" to enable fullscreen size on small screens.
+				* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg", "ph-cap-xxlg" "ph-cap-xxxlg" or "ph-cap-xxxxlg" to set caption size (no class = default size).
+				* Use class "ph-center" to align the content to the center. 
+				* Use class "ph-caption-parallax" to enable caption parallax.
+				* Use class "ph-image-parallax" to enable image/video parallax (if image/video exist).
+				* Use class "ph-bg-is-light" if needed, it makes the elements dark and more visible if you use a very light background image (effect only if the image/video exist).
+				-->
+				<div id="page-header" class="ph-full ph-full-m ph-center ph-cap-xxxxlg ph-image-parallax ph-caption-parallax">
+
+					<!-- Begin page header image 
+					============================= 
+					* Use class "ph-image-grayscale" to enable black & white image.
+					* Use class "ph-image-cover-*" to set image overlay opacity. For example "ph-image-cover-2" or "ph-image-cover-2-5" (up to "ph-image-cover-9-5"). 
+					-->
+					 <div class="ph-image ph-image-cover-2">
+						<div class="ph-image-inner">
+							<img src="assets/img/page-header/ph-1.jpg" alt="Image">
+						</div>
+					</div> 
+					<!-- End page header image -->
+
+						
+					<div class="page-header-inner tt-wrap">
+
+						<div class="ph-caption">
+							<div class="ph-caption-inner">
+								<!-- <h2 class="ph-caption-subtitle">Subtitle</h2> -->
+								<h1 class="ph-caption-title">The Pinnacle</h1>
+							</div> <!-- /.ph-caption-inner -->
+						</div> <!-- /.ph-caption -->
+
+					</div> <!-- /.page-header-inner -->
+
+					<!-- Begin page header mask
+					============================ 
+					Note: ph-mask is basically a clone of caption. If you want to use a different text on the mask then it is a bit tricky to fit. For better results, make sure that it will be the same length as possible as the original caption text (especially the title). It should also contain the same number of lines. Sometimes this can be difficult to achieve, in which case we recommend simply using identical text to the original caption.
+					-->
+					<div class="page-header-inner ph-mask">
+						<div class="ph-mask-inner tt-wrap">
+
+							<div class="ph-caption">
+								<div class="ph-caption-inner">
+									<!-- <h2 class="ph-caption-subtitle">Subtitle</h2> -->
+									<h1 class="ph-caption-title"> Argente</h1>
+								</div> <!-- /.ph-caption-inner -->
+							</div> <!-- /.ph-caption -->
+
+						</div> <!-- /.ph-mask-inner -->
+					</div>
+					<!-- End page header mask -->
+
+
+
+				</div>
+				<!-- End page header -->
+
+      <div id="page2">
+              <div id="page2_part1">
+                  <h3>Argenté</h3>
+                  <h1>The Pinnacle</h1>
+                  <p>Argenté is a blend of perfectly matured coconut spirits, the youngest of which is aged for a minimum of 20 years. The blend has been refined to perfection, handcrafted by master blenders, and transformed into a libation of distinguished taste.
+                  </p>
+              </div>
+              <img src="assets/img/Argente.png" class="bottle">
+              <div id="page2_part2">
+                  <h3>ABV</h3>
+                  <h5>Alcohole by valume</h5>
+                  <div id="box">
+                      <h2>6.2 <span>%</span></h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis mollitia corporis facere 
+                          ullam hic tempore unde quaerat quisquam
+                      </p>
+                  </div>
+                  <h3>IBU</h3>
+                  <h5>Isn't Reservation Units</h5>
+                  <div id="box">
+                      <h2>51 <span>.1</span></h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis mollitia corporis facere 
+                          ullam hic tempore unde quaerat quisquam 
+                      </p>
+                  </div>
+                  <div id="page2_part2_text1">
+                  <h3>ABV</h3>
+                  <h5>Alcohole by valume</h5>
+                  <div id="box">
+                      <h2>6.2 <span>%</span></h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis mollitia corporis facere 
+                          ullam hic tempore unde quaerat quisquam
+                      </p>
+                  </div>
+              </div>
+          </div>
+ 				</div>
+				<!-- ======================
+				///// Begin tt-footer /////
+				=========================== -->
+				<footer id="tt-footer" class="border-top">
+					<div class="tt-footer-inner tt-wrap">
+
+						<div class="tt-row">
+							<div class="tt-col-xl-3 tt-col-sm-6">
+								<div class="tt-footer-widget">
+									<h5 class="tt-footer-widget-heading">Links</h5>
+									<ul class="tt-footer-widget-list">
+										<li><a href="dummy.html" class="tt-link">The Pinnacle</a></li>
+										<li><a href="dummy.html" class="tt-link">Cocktails</a></li>
+										<li><a href="dummy.html" class="tt-link">Management Team</a></li>
+										<li><a href="dummy.html" class="tt-link">Board of Directors</a></li>
+									</ul> <!-- /.tt-footer-widget-list -->
+								</div> <!-- /.tt-footer-widget -->
+							</div> <!-- /.tt-col -->
+
+							<div class="tt-col-xl-3 tt-col-sm-6">
+								<div class="tt-footer-widget">
+									<h5 class="tt-footer-widget-heading">Sitemap</h5>
+									<ul class="tt-footer-widget-list">
+										<li><a href="about-me.html" class="tt-link">About Us</a></li>
+										<li><a href="portfolio.html" class="tt-link">Brands</a></li>
+										<li><a href="services.html" class="tt-link">Investor Relations</a></li>
+										<li><a href="contact.html" class="tt-link">Contact</a></li>
+									</ul> <!-- /.tt-footer-widget-list -->
+								</div> <!-- /.tt-footer-widget -->
+							</div> <!-- /.tt-col -->
+
+							<div class="tt-col-xl-3 tt-col-sm-6">
+								<div class="tt-footer-widget">
+									<h5 class="tt-footer-widget-heading">Contact</h5>
+									<ul class="tt-footer-widget-list">
+										<li><a href="mailto:contact@dcsl.com" class="tt-link">contact@dcsl.com</a></li>
+										<li><a href="tel:+(94)456789000" class="tt-link"> +(94) 456 789 000</a></li>
+										
+									</ul> <!-- /.tt-footer-widget-list -->
+								</div> <!-- /.tt-footer-widget -->
+							</div> <!-- /.tt-col -->
+
+							<div class="tt-col-xl-3 tt-col-sm-6 tt-justify-content-xl-end">
+								<div class="tt-footer-widget">
+									<ul class="tt-footer-widget-list">
+										<li>
+											<!-- You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-footer-logo img").-->
+											<div class="tt-footer-logo"> 
+												<a href="index.html" class="tt-magnetic-item">
+													<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-logo-light" loading="lazy" alt="Logo"> <!-- logo light -->
+													<img src="https://dcslgroup.com/wp-content/uploads/2022/03/cropped-cropped-DCSL_Logo-3.png" class="tt-logo-dark" loading="lazy" alt="Logo"> <!-- logo dark -->
+												</a>
+											</div> <!-- /.tt-footer-logo -->  
+										</li>
+										<li>
+											<div class="">
+												<svg id="year-animation" height="200" stroke="#fff" stroke-width="6" class="text-line" width="130%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">1913</text></svg>
+											</div> <!-- /.tt-footer-copyright -->
+										</li>
+									</ul> <!-- /.tt-footer-widget-list -->
+								</div> <!-- /.tt-footer-widget -->
+							</div> <!-- /.tt-col -->
+						</div> <!-- /.tt-row -->
+						<center>
+							<div class="tt-footer-copyright">
+												©  <a href="#" class="tt-link" target="_blank" rel="nofollow noopener"> DCSL</a><br> 
+												All Rights Reserved
+											</div> <!
+						</center>
+					</div> <!-- /.tt-section-inner -->
+				</footer>
+				<!-- End tt-footer -->
+
+
+				<!-- Begin scroll to top button
+				================================ -->
+				<a href="#" class="tt-scroll-to-top">
+					<div class="tt-stt-progress tt-magnetic-item">
+						<svg class="tt-stt-progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+							<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+						</svg>
+					</div> <!-- /.tt-stt-progress -->
+				</a>
+				<!-- End scroll to top button -->
+
+			</div>
+			<!-- End content wrap -->
+
+
+		</main>
+		<!-- End body inner -->
+
+
+        
+
+		<!-- ====================
+		///// Scripts below /////
+		===================== -->
+
+		<!-- Core JS -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+		<!-- Libs and Plugins JS -->
+		<script src="assets/vendor/gsap/gsap.min.js"></script> <!-- GSAP JS (https://gsap.com/) -->
+		<script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script> <!-- GSAP ScrollToPlugin JS (https://gsap.com/docs/v3/Plugins/ScrollToPlugin/) -->
+		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script> <!-- GSAP ScrollTrigger JS (https://gsap.com/docs/v3/Plugins/ScrollTrigger/) -->
+		<script src="assets/vendor/lenis.min.js"></script> <!-- Lenis (smooth scroll) JS (https://lenis.darkroom.engineering/) -->
+		<script src="assets/vendor/isotope/imagesloaded.pkgd.min.js"></script> <!-- imagesloaded JS (http://imagesloaded.desandro.com) -->
+		<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
+		<script src="assets/vendor/isotope/packery-mode.pkgd.min.js"></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
+		<script src="assets/vendor/fancybox/js/fancybox.umd.js"></script> <!-- Fancybox (lightbox) JS (https://fancyapps.com/) -->
+		<script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script> <!-- Swiper JS (https://swiperjs.com/) -->
+
+		<!-- Master JS -->
+		<script src="assets/js/theme.js"></script>
+		 <script src="assets/js/page.js"></script>
+		<script type="text/javascript">
+			const svgElement = document.getElementById('year-animation');
+
+			const observer = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+			    if (entry.isIntersecting) {
+			    entry.target.classList.add('animate');
+			    observer.disconnect();
+			    }
+			});
+			}, { threshold: 0.5 });
+
+			observer.observe(svgElement);
+
+		</script>
+
+
+<script type="text/javascript">
+    // Register ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Select the bottle and the target section
+    const bottle = document.getElementById("bottle");
+    const targetSection = document.getElementById("here");
+
+    // Get the position of the target section relative to the viewport
+    const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
+
+    // Create a ScrollTrigger instance
+    ScrollTrigger.create({
+        trigger: "#tt-content-wrap", // The container to track scrolling
+        start: "top top", // Start when the top of the container hits the top of the viewport
+        end: "bottom bottom", // End when the bottom of the container hits the bottom of the viewport
+        scrub: true, // Smoothly animate the transition
+        onUpdate: (self) => {
+            // Calculate the progress of the scroll
+            const progress = self.progress.toFixed(2); // Get the progress as a number between 0 and 1
+            
+            // Move the bottle based on the scroll progress
+            const bottleY = progress * (targetPosition - bottle.getBoundingClientRect().top);
+            gsap.set(bottle, { y: bottleY });
+
+            // Calculate the scale based on the progress
+            const scale = 1 - (progress * 0.5); // Scale down to 50% at the end of the scroll
+            gsap.set(bottle, { scale: scale });
+        }
+    });
+</script>
+<script>
+  // Ensure the DOM is fully loaded before running the script
+  document.addEventListener("DOMContentLoaded", function() {
+    // Register the ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Select the bottle element
+    const bottle = document.getElementById("bottle2");
+
+    // Set initial scale to 0 and hide the element
+    gsap.set(bottle, { scale: 0, autoAlpha: 0 });
+
+    // Create a ScrollTrigger instance
+    ScrollTrigger.create({
+      trigger: ".tt-section", // The section that triggers the animation
+      start: "top bottom", // When the top of the section hits the bottom of the viewport
+      end: "bottom top", // When the bottom of the section hits the top of the viewport
+      onEnter: () => {
+        // Delay the animation by 0.5 seconds (adjust as needed)
+        gsap.to(bottle, {
+          scale: 1,
+          autoAlpha: 1,
+          duration: 1, // Duration of the animation
+          delay: 0.7, // Delay before starting the animation
+          ease: "power2.out" // Easing function
+        });
+      },
+      onLeave: () => {
+        // Scale down the bottle when leaving the section
+        gsap.to(bottle, {
+          scale: 0,
+          autoAlpha: 0,
+          duration: 1, // Duration of the scale down animation
+          ease: "power2.in" // Easing function for scaling down
+        });
+      },
+      onEnterBack: () => {
+        // Scale up the bottle again when scrolling back into the section
+        gsap.to(bottle, {
+          scale: 1,
+          autoAlpha: 1,
+          duration: 1,
+          ease: "power2.out"
+        });
+      },
+      onLeaveBack: () => {
+        // Scale down the bottle when scrolling back up
+        gsap.to(bottle, {
+          scale: 0,
+          autoAlpha: 0,
+          duration: 1,
+          ease: "power2.in"
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>
