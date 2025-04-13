@@ -48,11 +48,18 @@
 
 }
 
+
 .text-line text {
   font-family: 'Anton', sans-serif;
   font-weight: 500;
-  font-style: normal;
+  font-style: normal;		
   
+}
+
+.tt-section-brands{
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),url('/assets/img/brands.jpg'); 
+  	background-size: cover;
+  	background-position: center;
 }
 
 @keyframes dash {
@@ -127,7 +134,7 @@
 			* Use class "tt-header-filled" to add background color to header on scroll (effect only with class "tt-header-scroll" and "tt-header-fixed").
 			* Use class "tt-header-alter" to enable alternative layout (for desktop only!).
 			-->
-			<header id="tt-header" class="tt-header-alter tt-header-scroll tt-header-filled">
+			<header id="tt-header" class="tt-header-filled tt-header-fixed">
 				<div class="tt-header-inner tt-noise"> 
 
 					<div class="tt-header-col tt-header-col-left">
@@ -328,10 +335,10 @@
 					* Use class "ph-video-cover-*" to set video overlay opacity. For example "ph-video-cover-2" or "ph-video-cover-2-5" (up to "ph-video-cover-9-5"). 
 					* Use attribute "loop" in <video> tag to make the video play repeatedly.
 					-->
-					<div class="ph-video ph-video-grayscale ph-video-cover-5">
+					<div class="ph-video  ph-video-cover-5">
 						<div class="ph-video-inner">
 							<video loop="" muted="" autoplay="" playsinline="" preload="metadata" poster="assets/vids/1920/video-1-1920.jpg">
-								<source src="assets/vids/placeholder.webm" data-src="assets/vids/hero.webm" type="video/webm">
+								<source src="assets/vids/main.mp4" data-src="assets/vids/main.mp4" type="video/mp4">
 							</video>
 						</div>
 					</div>
@@ -464,7 +471,7 @@
 					* You can use classes "border-top" and "border-bottom" if needed. 
 					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 					-->
-					<div class="tt-section padding-top-xlg-140 border-top">
+					<div class="tt-section padding-top-xlg-140 border-top tt-section-brands padding-bottom-xlg-80">
 						<div class="tt-section-inner tt-wrap">
 
 							<div class="tt-row">
@@ -515,7 +522,7 @@
 					* You can use classes "border-top" and "border-bottom" if needed. 
 					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 					-->
-					<div class="tt-section no-padding-top padding-top-xlg-80 padding-bottom-20 padding-bottom-xlg-80">
+					<div class="tt-section no-padding-top  padding-bottom-20 padding-bottom-xlg-80">
 						<div class="tt-section-inner">
 
 							<!-- Begin portfolio preview list 
