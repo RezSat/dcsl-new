@@ -66,7 +66,7 @@
 
 :root {
 	/* General */
-	--tt-main-color: #bf4a1a; /* Template main color. #bf4a1a */
+	--tt-main-color: #D8A913; /* Template main color. #bf4a1a */
 	--tt-dark-color: #121212; /* Template dark color. #121212 */
 	--tt-light-color: #efedea; /* Template light color. #efedea */
 
@@ -74,6 +74,7 @@
 	--tt-text-color: #efedea; /* Template text color. #efedea */
 	--tt-text-muted-color: #8f8f8f; /* Template text muted color. #8f8f8f */
 	--tt-border-color: rgb(133 133 133 / 50%); /* Template borders color. rgb(133 133 133 / 50%) */
+	--tt-sub-text-color: #51180B; /* Template sub text color. #bbb9b2 */
 
 	--tt-linear-text-bg-color: rgb(255 255 255 / 20%); /* For linear text reveal effect (do not change it!). rgb(255 255 255 / 20%) */
 
@@ -916,6 +917,8 @@ h6.tt-text-uppercase {
 	position: relative;
 	padding: 80px 0;
 }
+
+
 @media (max-width: 768px) {
 	.tt-section {
 		padding-top: 40px;
@@ -2130,7 +2133,7 @@ body.ph-mask-on .page-header-inner:not(.ph-mask) .ph-caption {
 	background: var(--tt-main-color);
 	padding-left: 0;
 	padding-right: 0;
-	color: var(--tt-dark-color);
+	color: var(--tt-sub-text-color);
 	pointer-events: none;
 	clip-path: circle(0 at var(--x, 50%) var(--y, 50%));
 	transition: clip-path .12s;
