@@ -20,6 +20,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
 		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
 		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
 
 		<!-- Libs and Plugins CSS -->
 		<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
@@ -32,55 +36,67 @@
 
 		<!-- Light style CSS -->
 		<link rel="stylesheet" href="assets/css/theme-light.css">
+
+		<!-- other CSS-->
+		 <link rel="stylesheet" href="assets/css/story-arrack.css">
 		<style type="text/css">
+
+
+			@media (max-width: 767px) {
+			.heading-legacy .tt-heading-title {
+				font-size: clamp(22px, 5vw, 32px);
+			}
+			}
+
+
 			.text-line {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  font-size: 140px;
-  visibility: hidden;
-  /* Start hidden */
-}
+				stroke-dasharray: 500;
+				stroke-dashoffset: 500;
+				font-size: 140px;
+				visibility: hidden;
+				/* Start hidden */
+				}
 
-.text-line.animate {
-  visibility: visible;
-  /* Visible when animated */
-  animation: dash 2.5s linear forwards, filling 2.5s ease-in forwards;
+			.text-line.animate {
+				visibility: visible;
+				/* Visible when animated */
+				animation: dash 2.5s linear forwards, filling 2.5s ease-in forwards;
 
-}
+			}
 
 
-.text-line text {
-  font-family: 'Anton', sans-serif;
-  font-weight: 500;
-  font-style: normal;		
-  
-}
+			.text-line text {
+				font-family: 'Anton', sans-serif;
+				font-weight: 500;
+				font-style: normal;		
+			
+			}
 
-.tt-section-brands{
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),url('/assets/img/brands.jpg'); 
-  	background-size: cover;
-  	background-position: center;
-}
+			.tt-section-brands{
+				background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),url('/assets/img/brands.jpg'); 
+				background-size: cover;
+				background-position: center;
+			}
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+			@keyframes dash {
+				to {
+					stroke-dashoffset: 0;
+				}
+			}
 
-@keyframes filling {
-  0%,
-  90% {
-    fill: #fff;
-    fill-opacity: 0;
-  }
+			@keyframes filling {
+				0%,
+				90% {
+					fill: #fff;
+					fill-opacity: 0;
+				}
 
-  100% {
-    fill: #fff;
-    fill-opacity: 1;
-    
-  }
-}
+				100% {
+					fill: #fff;
+					fill-opacity: 1;
+					
+				}
+			}
 		</style>
 
 	</head>
@@ -369,9 +385,7 @@
 								<div class="ph-caption-inner">
 									<!-- <h2 class="ph-caption-subtitle">Subtitle</h2> -->
 									<h1 class="ph-caption-title">DCSL<br> GROUP</h1>
-									<div class="ph-caption-description max-width-700">
-										Our legacy spans<br> over a 100 years
-									</div>
+									
 								</div> <!-- /.ph-caption-inner -->
 							</div> <!-- /.ph-caption -->
 
@@ -416,7 +430,7 @@
 					* You can use classes "border-top" and "border-bottom" if needed. 
 					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 					-->
-					<div class="tt-section padding-top-xlg-140 padding-bottom-xlg-120">
+					<div class="tt-section padding-top-xlg-140 padding-bottom-xlg-120 tt-section-story">
 						<div class="tt-section-inner tt-wrap">
 
 							<div class="tt-row">
@@ -446,7 +460,7 @@
 
 								<div class="tt-col-lg-7 tt-align-self-center">
 
-									<div class="text-xxlg font-500 tt-text-reveal">
+									<div class="text-xxlg font-200 tt-text-reveal">
 										What begins as sap from the coconut flower “Toddy” is naturally fermented and distilled to perfection to produce pure coconut arrack, 
                     one of the most natural and organic beverages in the world. Coconut Arrack is unique & indigenous to Sri Lanka with its tropical,
                      sunny flavours.
@@ -859,9 +873,9 @@
 											* Use class "tt-text-reveal" or "tt-anim-fadeinup" with title or subtitle element to enable text reveal animation.
 											* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
 											-->
-											<div class="tt-heading tt-heading-xxlg">
+											<div class="tt-heading tt-heading-lg">
 												<h3 class="tt-heading-subtitle tt-text-reveal">Then & Now</h3>
-												<h2 class="tt-heading-title tt-text-reveal">As times have changed, </h2>
+												<h2 class="tt-heading-title tt-text-reveal small-text">As times have changed, </h2>
 
 											</div>
 											<!-- End tt-Heading -->
@@ -992,8 +1006,8 @@
 									* Use class "tt-text-reveal" or "tt-anim-fadeinup" with title or subtitle element to enable text reveal animation.
 									* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
 									-->
-									<div class="tt-heading tt-heading-xxxlg no-margin">
-										<h2 class="tt-heading-title tt-text-reveal">Our legacy spans over a 100 years. From humble beginnings to a state-of-the-art operation providing the finest spirits crafted and refined for connoisseurs of taste.</h2> <!-- You can use <br> to break a text line if needed -->
+									<div class="tt-heading tt-heading-xlg no-margin max-width-1 heading-legacy">
+										<h2 class="tt-heading-title tt-text-reveal" style="word-break: break-word; overflow-wrap: break-word;">Our legacy spans over a 100 years. From humble beginnings to a state-of-the-art operation providing the finest spirits crafted and refined for connoisseurs of taste.</h2> <!-- You can use <br> to break a text line if needed -->
 									</div>
 									<!-- End tt-Heading -->
 

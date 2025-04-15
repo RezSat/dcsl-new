@@ -1,0 +1,85 @@
+.tt-section-story {
+  position: relative;
+  background-image: url('/assets/img/85.png');
+  background-position: -130px calc(100% + 80px);
+  background-repeat: no-repeat;
+  background-size: 45% auto;
+  margin: 0 auto;
+}
+
+.tt-section-story::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  right: -130px;
+  width: 45%;
+  height: 100%;
+  background-image: url('/assets/img/85.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  transform: scaleX(-1);
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* For screens up to 1400px */
+@media (max-width: 1400px) {
+  .tt-section-story {
+    background-position: -90px calc(100% + 60px);
+    background-size: 38% auto;
+  }
+  .tt-section-story::after {
+    right: -90px;
+    bottom: -60px;
+    width: 38%;
+  }
+}
+
+/* For screens up to 1024px (tablet landscape) */
+@media (max-width: 1024px) {
+  .tt-section-story {
+    background-position: -60px calc(100% + 40px);
+    background-size: 32% auto;
+  }
+  .tt-section-story::after {
+    right: -60px;
+    bottom: -40px;
+    width: 32%;
+  }
+}
+
+/* For screens up to 991px (tablet portrait) */
+@media (max-width: 991px) {
+  .tt-section-story {
+    background-position: -40px calc(100% + 30px);
+    background-size: 28% auto;
+  }
+  .tt-section-story::after {
+    right: -40px;
+    bottom: -30px;
+    width: 28%;
+  }
+}
+
+/* For screens up to 768px (mobile landscape) */
+@media (max-width: 768px) {
+  .tt-section-story {
+    background-position: -20px calc(100% + 60px);
+    background-size: 70% auto;
+  }
+  .tt-section-story::after {
+    display: none;
+  }
+}
+
+/* For screens up to 480px (mobile portrait) */
+@media (max-width: 480px) {
+  .tt-section-story {
+    background-position: -10px calc(100% + 50px);
+    background-size: 100% auto;
+  }
+  .tt-section-story::after {
+    display: none;
+  }
+}

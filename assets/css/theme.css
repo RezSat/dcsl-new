@@ -79,9 +79,13 @@
 	--tt-linear-text-bg-color: rgb(255 255 255 / 20%); /* For linear text reveal effect (do not change it!). rgb(255 255 255 / 20%) */
 
 	/* Fonts */
-	--tt-body-font: 'Poppins', sans-serif; /* Body font. */
+	--tt-body-font: 'Lora', serif; /* Body font. */
+	--tt-lora-font: 'Lora', serif; /* Lora font. */
+	--tt-poppins-font: "Poppins", sans-serif; /* Poppins font. */
 	--tt-alter-font: "Big Shoulders Display", sans-serif; /* Secondary/Alter font. */
 	--tt-anton-font: "Anton", sans-serif;
+	--tt-cinzel-font: "Cinzel", serif;
+	--tt-baskerville-font: "Libre Baskerville", serif;
 	/* Page transition */
 	--tt-page-trans-overlay-bg-color: #161616; /* Page transition overlay background color. #161616 */
 
@@ -739,7 +743,7 @@ h6.tt-text-uppercase {
 .tt-heading-title {
 	margin: 0;
 	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	font-family: var(--tt-cinzel-font);
 	font-size: clamp(32px, 3vw, 42px);
 	font-weight: bold;
 	font-weight: 600;
@@ -1342,8 +1346,8 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 		display: block;
 		padding: 24px 0;
 		text-transform: uppercase;
-		font-family: var(--tt-alter-font);
-		font-size: 24px;
+		font-family: var(--tt-cinzel-font);
+		font-size: 20px;
 		font-weight: bold;
 		font-weight: 600;
 		color: var(--tt-text-color);
@@ -1997,7 +2001,7 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 .ph-caption-title {
 	margin: 0;
 	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	font-family: var(--tt-cinzel-font);
 	font-size: clamp(48px, 5vw, 82px);
 	font-weight: bold;
 	font-weight: 600;
@@ -2113,7 +2117,7 @@ a.ph-caption-category:hover {
 	line-height: 0.95;
 }
 #page-header.ph-cap-xxxxlg .ph-caption-title {
-	font-size: clamp(64px, 12vw, 230px);
+	font-size: clamp(64px, 10vw, 230px);
 	line-height: 0.9;
 }
 
@@ -6851,7 +6855,7 @@ body:not(.is-mobile) #portfolio-grid.pgi-cap-inside.pgi-cap-hover .portfolio-gri
 .tt-ppli-count::before {
 	display: block;
 	content: counter(tt-ppli-counter, decimal-leading-zero);
-	font-family: var(--tt-alter-font);
+	font-family: var(--tt-baskerville-font);
 	font-size: clamp(34px, 6vw, 114px);
 	font-weight: normal;
 	color: var(--tt-text-color);
@@ -6870,10 +6874,11 @@ body:not(.is-mobile) #portfolio-grid.pgi-cap-inside.pgi-cap-hover .portfolio-gri
 .tt-ppli-title {
 	margin: 0;
 	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	font-family: var(--tt-baskerville-font);
 	font-size: clamp(32px, 6vw, 82px);
 	font-weight: bold;
-	font-weight: 600;
+	font-weight: 400;
+	font-style: italic;
 	color: var(--tt-text-color);
 	line-height: 1;
 }
@@ -9439,8 +9444,8 @@ body.is-mobile .tt-avlist-item:focus {
 .tt-footer-widget-heading {
 	margin-bottom: 34px;
 	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
-	font-size: clamp(38px, 4vw, 58px);
+	font-family: var(--tt-cinzel-font);
+	font-size: clamp(38px, 2vw, 58px);
 	font-weight: bold;
 	font-weight: 600;
 	color: var(--tt-text-color);
