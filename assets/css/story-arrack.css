@@ -3,7 +3,7 @@
   background-image: url('/assets/img/85-01.png');
   background-position: -130px calc(100% + 80px);
   background-repeat: no-repeat;
-  background-size: 45% auto;
+  background-size: 35% auto;
   margin: 0 auto;
 }
 
@@ -12,7 +12,7 @@
   position: absolute;
   bottom: -80px;
   right: -130px;
-  width: 45%;
+  width: 35%;
   height: 100%;
   background-image: url('/assets/img/85-01.png');
   background-repeat: no-repeat;
