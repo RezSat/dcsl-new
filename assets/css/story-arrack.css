@@ -1,6 +1,6 @@
 .tt-section-story {
   position: relative;
-  background-image: url('/assets/img/85.png');
+  background-image: url('/assets/img/85-01.png');
   background-position: -130px calc(100% + 80px);
   background-repeat: no-repeat;
   background-size: 45% auto;
@@ -14,7 +14,7 @@
   right: -130px;
   width: 45%;
   height: 100%;
-  background-image: url('/assets/img/85.png');
+  background-image: url('/assets/img/85-01.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
