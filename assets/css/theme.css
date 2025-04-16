@@ -4543,6 +4543,18 @@ body:not(.is-mobile) .tt-clipper-btn {
  * Text linear reveal
 /* ------------------------------------------------------------- */
 
+.tt-story-text-reveal > span {
+	position: relative;
+	display: inline;
+	color: var(--tt-text-color);
+	-webkit-text-fill-color: var(--tt-linear-text-bg-color);
+	-webkit-background-clip: text;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-size: 0% 100%;
+	will-change: background-size;
+}
+
 .tt-text-reveal > span {
 	position: relative;
 	display: inline;

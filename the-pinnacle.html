@@ -36,45 +36,55 @@
 		<link rel="stylesheet" href="assets/css/theme-light.css">
 		<style type="text/css">
 			.text-line {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  font-size: 140px;
-  visibility: hidden;
-  /* Start hidden */
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	font-size: 140px;
+	visibility: hidden;
 }
 
-.text-line.animate {
-  visibility: visible;
-  /* Visible when animated */
-  animation: dash 2.5s linear forwards, filling 2.5s ease-in forwards;
-
+.text-line.animate-forward {
+	visibility: visible;
+	animation: dash 2.5s linear forwards, filling 2.5s ease-in forwards;
 }
 
-.text-line text {
-  font-family: 'Anton', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  
+.text-line.animate-reverse {
+	visibility: visible;
+	animation: dash-reverse 2.5s linear forwards, filling-reverse 2.5s ease-in forwards;
 }
 
 @keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
+	to {
+		stroke-dashoffset: 0;
+	}
 }
-
+@keyframes dash-reverse {
+	from {
+		stroke-dashoffset: 0;
+	}
+	to {
+		stroke-dashoffset: 500;
+	}
+}
 @keyframes filling {
-  0%,
-  90% {
-    fill: #fff;
-    fill-opacity: 0;
-  }
-
-  100% {
-    fill: #fff;
-    fill-opacity: 1;
-    
-  }
+	0%,
+	90% {
+		fill: #fff;
+		fill-opacity: 0;
+	}
+	100% {
+		fill: #fff;
+		fill-opacity: 1;
+	}
+}
+@keyframes filling-reverse {
+	from {
+		fill: #fff;
+		fill-opacity: 1;
+	}
+	to {
+		fill: #fff;
+		fill-opacity: 0;
+	}
 }
 		</style>
 
@@ -320,7 +330,7 @@
 					 	<div class="ph-video ph-video-grayscale ph-video-cover-5">
 						<div class="ph-video-inner">
 							<video loop="" muted="" autoplay="" playsinline="" preload="metadata" poster="assets/vids/1920/video-1-1920.jpg">
-								<source src="assets/vids/placeholder.webm" data-src="assets/vids/hero_temp2.webm" type="video/webm">
+								<source src="assets/vids/pinnacle_hero.mp4" data-src="assets/vids/pinnacle_hero.mp4" type="video/mp4">
 							</video>
 						</div>
 					</div>
@@ -514,21 +524,46 @@
 		<!-- Master JS -->
 		<script src="assets/js/theme.js"></script>
 		 <script src="assets/js/page.js"></script>
-		<script type="text/javascript">
+		 <script type="text/javascript">
 			const svgElement = document.getElementById('year-animation');
-
+		
 			const observer = new IntersectionObserver((entries, observer) => {
-			entries.forEach(entry => {
-			    if (entry.isIntersecting) {
-			    entry.target.classList.add('animate');
-			    observer.disconnect();
-			    }
-			});
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						startLoopingAnimation();
+						observer.disconnect();
+					}
+				});
 			}, { threshold: 0.5 });
-
+		
 			observer.observe(svgElement);
-
+		
+			function startLoopingAnimation() {
+				let forward = true;
+		
+				function playAnimation() {
+					svgElement.classList.remove('animate-forward', 'animate-reverse');
+					// Force reflow
+					void svgElement.offsetWidth;
+					if (forward) {
+						svgElement.classList.add('animate-forward');
+					} else {
+						svgElement.classList.add('animate-reverse');
+					}
+				}
+		
+				svgElement.addEventListener('animationend', function handler(e) {
+					// Only toggle after the 'filling' or 'filling-reverse' animation ends
+					if (e.animationName === 'filling' || e.animationName === 'filling-reverse') {
+						forward = !forward;
+						setTimeout(playAnimation, 500); // Optional delay
+					}
+				});
+		
+				playAnimation();
+			}
 		</script>
+
 
 
 <script type="text/javascript">

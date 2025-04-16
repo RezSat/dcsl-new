@@ -50,53 +50,56 @@
 
 
 			.text-line {
-				stroke-dasharray: 500;
-				stroke-dashoffset: 500;
-				font-size: 140px;
-				visibility: hidden;
-				/* Start hidden */
-				}
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	font-size: 140px;
+	visibility: hidden;
+}
 
-			.text-line.animate {
-				visibility: visible;
-				/* Visible when animated */
-				animation: dash 2.5s linear forwards, filling 2.5s ease-in forwards;
+.text-line.animate-forward {
+	visibility: visible;
+	animation: dash 2.5s linear forwards, filling 2.5s ease-in forwards;
+}
 
-			}
+.text-line.animate-reverse {
+	visibility: visible;
+	animation: dash-reverse 2.5s linear forwards, filling-reverse 2.5s ease-in forwards;
+}
 
-
-			.text-line text {
-				font-family: 'Anton', sans-serif;
-				font-weight: 500;
-				font-style: normal;		
-			
-			}
-
-			.tt-section-brands{
-				background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),url('/assets/img/brands.jpg'); 
-				background-size: cover;
-				background-position: center;
-			}
-
-			@keyframes dash {
-				to {
-					stroke-dashoffset: 0;
-				}
-			}
-
-			@keyframes filling {
-				0%,
-				90% {
-					fill: #fff;
-					fill-opacity: 0;
-				}
-
-				100% {
-					fill: #fff;
-					fill-opacity: 1;
-					
-				}
-			}
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes dash-reverse {
+	from {
+		stroke-dashoffset: 0;
+	}
+	to {
+		stroke-dashoffset: 500;
+	}
+}
+@keyframes filling {
+	0%,
+	90% {
+		fill: #fff;
+		fill-opacity: 0;
+	}
+	100% {
+		fill: #fff;
+		fill-opacity: 1;
+	}
+}
+@keyframes filling-reverse {
+	from {
+		fill: #fff;
+		fill-opacity: 1;
+	}
+	to {
+		fill: #fff;
+		fill-opacity: 0;
+	}
+}
 		</style>
 
 	</head>
@@ -354,7 +357,7 @@
 					<div class="ph-video  ph-video-cover-5">
 						<div class="ph-video-inner">
 							<video loop="" muted="" autoplay="" playsinline="" preload="metadata" poster="assets/vids/1920/video-1-1920.jpg">
-								<source src="assets/vids/main.mp4" data-src="assets/vids/main.mp4" type="video/mp4">
+								<source src="assets/vids/hero.mp4" data-src="assets/vids/hero.mp4" type="video/mp4">
 							</video>
 						</div>
 					</div>
@@ -814,7 +817,7 @@
 							* Supported media: "YouTube", "Vimeo", ".mp4", ".mp3 (requires data-type="html5video")". Just add your media link to the href="" tag.
 							-->
 							<div class="tt-clipper">
-								<a href="assets/vids/middle_video.webm" class="tt-clipper-inner" data-cursor="View<br>Full" data-fancybox="" data-caption="This is a caption">
+								<a href="assets/vids/new_middle_video.mp4" class="tt-clipper-inner" data-cursor="View<br>Full" data-fancybox="" data-caption="This is a caption">
 
 									<!-- Clipper background (image) -->
 									<!-- <div class="tt-clipper-bg">
@@ -824,7 +827,7 @@
 									<!-- Clipper background (video) -->
 									<div class="tt-clipper-bg">
 										<video loop="" muted="" autoplay="" playsinline="" preload="metadata" poster="assets/vids/1920/showreel-1920.jpg">
-											<source src="assets/vids/placeholder.webm" data-src="assets/vids/middle_video.webm" type="video/webm">
+											<source src="assets/vids/new_middle_video.mp4" data-src="assets/vids/new_middle_video.mp4" type="video/mp4">
 										</video>
 									</div>
 
@@ -1157,22 +1160,42 @@
 		<script src="assets/js/theme.js"></script>
 		<script type="text/javascript">
 			const svgElement = document.getElementById('year-animation');
-
-const observer = new IntersectionObserver((entries, observer) => {
-entries.forEach(entry => {
-    if (entry.isIntersecting) {
-    entry.target.classList.add('animate');
-    observer.disconnect();
-    }
-});
-}, { threshold: 0.5 });
-
-observer.observe(svgElement);
-
+		
+			const observer = new IntersectionObserver((entries, observer) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						startLoopingAnimation();
+						observer.disconnect();
+					}
+				});
+			}, { threshold: 0.5 });
+		
+			observer.observe(svgElement);
+		
+			function startLoopingAnimation() {
+				let forward = true;
+		
+				function playAnimation() {
+					svgElement.classList.remove('animate-forward', 'animate-reverse');
+					// Force reflow
+					void svgElement.offsetWidth;
+					if (forward) {
+						svgElement.classList.add('animate-forward');
+					} else {
+						svgElement.classList.add('animate-reverse');
+					}
+				}
+		
+				svgElement.addEventListener('animationend', function handler(e) {
+					// Only toggle after the 'filling' or 'filling-reverse' animation ends
+					if (e.animationName === 'filling' || e.animationName === 'filling-reverse') {
+						forward = !forward;
+						setTimeout(playAnimation, 500); // Optional delay
+					}
+				});
+		
+				playAnimation();
+			}
 		</script>
-
-
-
-	
 
 </body></html>
