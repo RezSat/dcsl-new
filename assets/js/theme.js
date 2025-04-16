@@ -2099,17 +2099,16 @@
 
 	// Text horizontal reveal on scroll
 	// =================================
-	$(".tt-text-reveal").each(function() {
+	$(".tt-text-reveal, .tt-text-story-reveal").each(function() {
 		$(this).wrapInner("<span/>");
-	});
-
-	// Convert the elements into an array for GSAP
-	let ttTextRevealElements = gsap.utils.toArray(".tt-text-reveal");
-
+	  });
+	  
+	  let ttTextRevealElements = gsap.utils.toArray(".tt-text-reveal, .tt-text-story-reveal");
+	
 	// Apply GSAP animations
 	ttTextRevealElements.forEach(function(ttTextReveal) {
 		let ttTextRevealSpans = ttTextReveal.querySelectorAll("span");
-
+	
 		let tl_ttTextRevealAnim = gsap.timeline({
 			scrollTrigger: {
 				trigger: ttTextReveal,
